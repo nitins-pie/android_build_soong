@@ -118,7 +118,7 @@ type variableProperties struct {
 		}
 
 		// include Custom variables
-		*android.Product_variables
+		Custom android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -237,7 +237,7 @@ type productVariables struct {
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
 	// include Custom variables
-	*android.ProductVariables
+	Custom android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
